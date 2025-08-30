@@ -6,6 +6,16 @@ public class Rectangle {
     private double width;
     private int sides = 4;
 
+    public Rectangle(){
+        setLength(0);
+        this.width = 0;
+    }
+
+    public Rectangle(double length, double width){
+        setLength(length);
+        setWidth(width);
+    }
+
     public double calculatePerimeter(){
         return(2 * length) + (2 * width);
     }
